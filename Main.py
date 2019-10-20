@@ -53,8 +53,9 @@ def main():
                 continue
             else:
                 main()
+
+        else:
+            print("I do not have the function " + decision)
+            print("Please try again.")
 main()
-
-
-
 
