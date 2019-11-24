@@ -1,6 +1,18 @@
+"""
+__author__ = Paul Basso
+
+"""
+
+
 def eightball(name):
+    """
+Acts as a Magic Eight Ball for the user to ask questions about their future.
+
+    :param name:
+    """
+
     import random
-    eightquestion = input("What is your question? ")
+    input("What is your question? ")
     eightstatements = [
         'Ask again later,',
         'Better not tell you now,',
@@ -20,4 +32,3 @@ def eightball(name):
         'Yes,',
         'Yes – definitely,']
     print(random.choice(eightstatements), "%s" % name)
-    return True

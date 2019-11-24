@@ -2,12 +2,14 @@
 Discord Bot.
 
 __author__ = Paul Basso
+
 """
+
 
 from Integration.Calculator import calculator
 from Integration.EightBall import eightball
-from Integration.ShoppingList import shoppinglist
 from Integration.RandomWebsites import randomsites
+from Integration.ShoppingList import shoppinglist
 
 print("Hello! I am Kowalski, your personal assistant.")
 name = input("What is your name? ")
@@ -16,8 +18,13 @@ print("Pleasure to meet you %s! At the moment, I have two functions: "
 
 
 def main():
-    choice = True
-    while choice:
+    """
+The function that is called when the program is ran. The function contains
+all the other functions within the Integration folder.
+
+    """
+    user_wants_to_continue = True
+    while user_wants_to_continue:
         print("Here are my functions:")
         print("1. Calculator")
         print("2. Magic Eight Ball")
@@ -30,7 +37,7 @@ def main():
 
         if decision == "5":
             print("Live long and prosper, %s!" % name)
-            choice = False
+            user_wants_to_continue = False
 
         elif decision == "1":
             calculator()
@@ -39,7 +46,21 @@ def main():
             eightball(name)
 
         elif decision == "3":
-            shoppinglist()
+            print("My options are ")
+            print("1. Create new list")
+            print("2. View current list")
+            shopdecision = input("What would you like to do? Please enter "
+                                 "the number of the choice. ")
+
+            if shopdecision == "1":
+                shop_list = shoppinglist()
+
+            elif shopdecision == "2":
+                try:
+                    print(shop_list)
+                except UnboundLocalError:
+                    print("You currently do not have a shopping list. Please "
+                          "create a new shopping list. ")
 
         elif decision == "4":
             randomsites()

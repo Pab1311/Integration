@@ -1,2 +1,6 @@
-This folder contains the main code, along with the functions needed for the code to operate.
-Please download the folder in order for the imports to work.
+# This folder contains the main code, along with the functions needed for the
+code to operate.
+# Please download the folder in order for the imports to work.
+
+# In addition, you need to have PyInputPlus installed in order for the function
+ to work.
