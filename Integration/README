@@ -1,6 +1,15 @@
 # This folder contains the main code, along with the functions needed for the
 code to operate.
+
 # Please download the folder in order for the imports to work.
 
 # In addition, you need to have PyInputPlus installed in order for the function
- to work.
+to work.
+
+# You can simply download this file onto an editor, such as Pycharm and install PyInputPlus from there.
+
+# If not, type python -m pip install PyInputPlus on your Command Prompt.
+
+
+pip install PyInputPlus
+
