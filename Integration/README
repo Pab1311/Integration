@@ -6,7 +6,7 @@ code to operate.
 # In addition, you need to have PyInputPlus installed in order for the function
 to work.
 
-# You can simply download this file onto an editor, such as Pycharm and install PyInputPlus from there.
+# You can simply download this file onto an editor, such as Pycharm, and install PyInputPlus from there.
 
 # If not, type python -m pip install PyInputPlus on your Command Prompt.
 
